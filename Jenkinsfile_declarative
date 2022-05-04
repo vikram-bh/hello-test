@@ -1,0 +1,28 @@
+def git_url = 'https://github.com/vikram-bh/hello-test.git'
+pipeline{
+    agent {label 'android-sdk'}
+
+    environment {
+        gitcred = credentials('NEW_BH_GIT')
+		cdecred = credentials('cde-registry-credential-id')
+    }
+    stages{
+        stage('Set up environment '){
+            steps{
+                script{
+                    cleanWs()
+                }
+            }
+        }
+        stage("Git Checkout")
+		{
+            steps{
+                git branch: "main" , credentialsId: 'NEW_BH_GIT', url: "${git_url}"
+            }
+        }
+
+
+
+
+    }
+}
