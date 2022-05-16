@@ -14,11 +14,19 @@ pipeline{
                 }
             }
         }
+	stage("hostname") {
+	steps {
+	script {
+	 sh 'hostname -i'
+	}
+	}
+	}
         stage("Git Checkout")
 		{
             steps{
                 git branch: "main" , credentialsId: 'NEW_BH_GIT', url: "${git_url}"
             }
+	    
         }
 
 
