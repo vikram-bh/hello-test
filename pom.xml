@@ -176,7 +176,7 @@
    <repository>
      <id>github</id>
      <name>GitHub OWNER Apache Maven Packages</name>
-     <url>https://artifactory.ops.bhge.ai/artifactory/OGDVirtual/org/flowable/flowable-jdbc/</url>
+     <url>https://artifactory.ops.bhge.ai/artifactory/OGDVirtual/</url>
    </repository>
 </distributionManagement>
 </project>
