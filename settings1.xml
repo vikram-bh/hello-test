@@ -3,12 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>${security.getCurrentUsername()}</username>
+      <username>503284057</username>
       <password>${security.getEscapedEncryptedPassword()!"Q3I4QDAxZGVj"}</password>
       <id>central</id>
     </server>
     <server>
-      <username>${security.getCurrentUsername()}</username>
+      <username>503284057</username>
       <password>${security.getEscapedEncryptedPassword()!"Q3I4QDAxZGVj"}</password>
       <id>snapshots</id>
     </server>
